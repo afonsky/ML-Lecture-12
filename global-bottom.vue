@@ -10,8 +10,9 @@
     <div class="flex">
       <div>
        <span v-html="$slidev.configs.author"></span> &nbsp;|&nbsp;
-       Design of Experiments Using ML &nbsp;|&nbsp;
-       <span v-html="$slidev.configs.subtitle"></span> 2024
+       <span v-html="$slidev.configs.title"></span> &nbsp;|&nbsp;
+       <span v-html="$slidev.configs.subtitle"></span> &nbsp;|&nbsp;
+       HSE 2025/2026
       </div>
       <div class="flex-grow">&nbsp;</div>
       <div

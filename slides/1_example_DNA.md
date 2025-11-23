@@ -1,3 +1,7 @@
+---
+zoom: 0.95
+---
+
 # Example. Cancer Cell Classification
 
 <div class="grid grid-cols-[3fr_3fr] gap-5">
@@ -24,12 +28,12 @@
 </div>
 
 ---
-zoom: 0.95
+zoom: 0.93
 ---
 
 # Example. Cancer Cell Classification
 
-<div class="grid grid-cols-[4fr_1fr] gap-5">
+<div class="grid grid-cols-[7fr_2fr] gap-5">
 <div>
   <figure>
     <img src="/Chromosome_DNA_Gene.svg.png" style="width: 190px !important">

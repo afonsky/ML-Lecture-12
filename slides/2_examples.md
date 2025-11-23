@@ -66,6 +66,8 @@ zoom: 0.9
 		* Thus in high dimensions **all feasible training samples sparsely populate the input space**
 
 ---
+zoom: 0.93
+---
 
 # Curse of Dimensionality. Example 3
 
@@ -121,6 +123,8 @@ zoom: 0.9
 2. Use entirely **new methods** developed for $n << p$
 
 ---
+zoom: 0.95
+---
 
 # Recall: Linear Discriminant Analysis (LDA)
 
@@ -165,6 +169,8 @@ $\delta_k (x_{p \times 1}) := -\sum\limits_{j=1}^p \frac{(x_j - \bar{x}_{kj})^2}
 * What would Hastie and Tibshirani propose?
 
 ---
+zoom: 0.97
+---
 
 # Nearest Shrunken Centroids (NSC)
 
@@ -194,10 +200,12 @@ $d_{kj} := \mathrm{sgn}(d_{jk})(\lvert d_{jk} \rvert - \Delta)_{+}$
 </div>
 
 ---
+zoom: 0.97
+---
 
 # NSC vs Diagonal Covariance LDA
 
-<div class="grid grid-cols-[3fr_3fr] gap-1">
+<div class="grid grid-cols-[3fr_3fr] gap-10">
 <div>
 
 * Diagonal Covariance LDA
@@ -224,6 +232,8 @@ $d_{kj} := \mathrm{sgn}(d_{jk})(\lvert d_{jk} \rvert - \Delta)_{+}$
 </div>
 </div>
 
+---
+zoom: 0.97
 ---
 
 # Ramaswamy’s Dataset
@@ -295,13 +305,15 @@ $d_{kj} := \mathrm{sgn}(d_{jk})(\lvert d_{jk} \rvert - \Delta)_{+}$
 <div>
   <figure>
     <img src="/svm.gif" style="width: 350px !important">
-    <figcaption style="color:#b3b3b3ff; font-size: 11px;"><br>Image source:
+    <figcaption style="color:#b3b3b3ff; font-size: 11px;"><br>Image (animated gif) source:
 	  <a href="https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93">https://blog.statsbot.co/support-vector-machines-tutorial-c1618e635e93</a>
     </figcaption>
   </figure>
 </div>
 </div>
 
+---
+zoom: 0.97
 ---
 
 # Feature Importance
@@ -384,15 +396,14 @@ $d_{kj} := \mathrm{sgn}(d_{jk})(\lvert d_{jk} \rvert - \Delta)_{+}$
 	* Such as in PMS example, voice signal, stock market prices, digital images
 * Fused Lasso enforces smoothness of corresponding coefficients
 	* assumes no gaps in order, i.e. no jumps, i.e. the coefficient function sampling is smooth
-	* Note: lasso and ridge penalties uniformly shrink coefficients without accounting for order.
-* **Fused Lasso**:
-<br> $\min\limits_{\beta \in \R^p} \lVert Y - \hat{Y}\rVert_2^2 + \lambda_1 \lVert\beta\rVert + \lambda_2 \sum\limits_{j=1}^{p-1}\lvert \beta_{j+1} - \beta_j \rvert$
+	* Note: Lasso and Ridge penalties uniformly shrink coefficients without accounting for order
+* **Fused Lasso**: $\min\limits_{\beta \in \R^p} \lVert Y - \hat{Y}\rVert_2^2 + \lambda_1 \lVert\beta\rVert + \lambda_2 \sum\limits_{j=1}^{p-1}\lvert \beta_{j+1} - \beta_j \rvert$
 			
 * Still yields sparse solution
 * Forces adjacent coefficients to remain similar in values
 
 ---
-zoom: 0.9
+zoom: 0.85
 ---
 
 # Classification with Latent Features
@@ -400,7 +411,7 @@ zoom: 0.9
 * Sometimes features are not directly observable
 * How do we even measure similarity among observations?
 
-<div class="grid grid-cols-[4fr_3fr] gap-3">
+<div class="grid grid-cols-[4fr_3fr] gap-10">
 <div>
 <br>
 
@@ -411,18 +422,20 @@ zoom: 0.9
 * A set of DNA molecules’ nucleotide sequences
 * A set of stocks’ historical prices
 * A set of voice signals
-	* amazon.com needs to recognize “Alexa” pronounced in any voice, at any length, at any sampling rate
+	* Amazon needs to recognize “Alexa” pronounced in any voice, at any length, at any sampling rate
 </div>
 <div>
   <figure>
-    <img src="/alexa.png" style="width: 460px !important; position:relative; top: -50px; left: 120px">
-    <figcaption style="color:#b3b3b3ff; font-size: 11px; position:relative; top: -50px; left: 50px"><br>Image source:
+    <img src="/alexa.png" style="width: 460px !important">
+    <figcaption style="color:#b3b3b3ff; font-size: 11px;"><br>Image source:
 	  <a href="https://read.nxtbook.com/ieee/signal_processing/november_2019/speech_processing_for_digital.html">https://read.nxtbook.com/ieee/signal_processing/november_2019/speech_processing_for_digital.html</a>
     </figcaption>
   </figure>
 </div>
 </div>
 
+---
+zoom: 0.95
 ---
 
 # Ex. Protein Classification with String Kernels

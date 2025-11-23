@@ -19,6 +19,8 @@ $f(x) = \sum\limits_{i \in S}^n \alpha_i K(x, x_i)$,
 where $S$ is a set of support vectors (determined during training)
 
 ---
+zoom: 0.97
+---
 
 # We can also add non-linearity via
 <br>
@@ -39,10 +41,12 @@ K(u,v) = \mathrm{tanh}\Big[a \langle u, v \rangle + r \Big]
 $$
 
 ---
+zoom: 0.92
+---
 
 # Radial Basis Kernel, $\mathrm{exp}\big[-\gamma ||u_j - v_j||_2^2 \big]$
 
-<div class="grid grid-cols-[4fr_3fr] gap-1">
+<div class="grid grid-cols-[5fr_3fr] gap-1">
 <div>
 
 * It is essentially an unscaled Gaussian PDF
@@ -53,6 +57,7 @@ $$
 
 </div>
 <div>
+<br>
 <figure>
 	<img src="/Normal_Distribution_PDF.svg" style="width: 250px !important">
 	<figcaption style="color:#b3b3b3ff; font-size: 11px">Image source:
@@ -62,10 +67,12 @@ $$
 </div>
 </div>
 
-* Hence, only neighboring support vectors participate in forming a decision boundary
+<br>
 <div class="grid grid-cols-[3fr_3fr] gap-1">
 <div>
-	<br>
+
+* Hence, only neighboring support vectors participate in forming a decision boundary
+
 </div>
 <div>
 <figure>
@@ -88,6 +95,8 @@ $$
 	</figcaption>
 </figure>
 
+---
+zoom: 0.95
 ---
 
 # SVM is a Binary Classifier
